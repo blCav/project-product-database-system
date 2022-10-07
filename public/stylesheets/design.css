@@ -1,0 +1,158 @@
+.form-control {
+	margin-top: 1.2rem;
+}
+
+/*======= header ===== */
+
+.main-header {
+    width: 100%;
+    background-color: #1592B4;
+    box-shadow: 0px -3px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
+}
+
+.main-header-content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-header-content h1 {
+    color: #FFFF;
+}
+
+.title-logo {
+    font-size: 1.5em;
+    line-height: 2.625em;
+}
+
+.title-logo a {
+	color: #FFFF;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+	margin: 0;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    padding-right: 28px;
+}
+
+.nav-links ul li:last-child{
+    padding-right: inherit;
+}
+
+.nav-links a, .nav-links li:first-child {
+	color: #FFFF;
+	font-weight: bold;
+    border: none;
+	text-decoration: none;
+}
+
+.nav-links a:hover {
+    color:grey;
+    font-weight: 600;
+    border: none;
+	text-decoration: none;
+}
+
+
+.nav-links li:first-child {
+    text-transform: uppercase;
+}
+
+
+/*========= Login Page ======*/
+
+.authentification {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 30%;
+    text-align: center;
+}
+
+.authentification button, .authentification a {
+    width: 100%;
+    background-color: #1592B4;
+    border: none;
+
+}
+
+.authentification button:hover, .authentification a:hover {
+    background-color: #1283a2;
+}
+
+.authentification p {
+    color: red;
+}
+
+#choice{
+    color: black;
+    font-weight: bold;
+    margin-top: 16px;
+}
+
+/*========= Register Page ======*/
+
+#register-link {
+    margin-top: 16px;
+    background-color: initial;
+    display: flex;
+    align-content: flex-start;
+    text-decoration: none; 
+}
+
+/*========= Add New Product Page ======*/
+
+.add-new-product {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.add-new-product h1{
+    margin-bottom: 30px;
+}
+
+.add-new-product button {
+    width: 100%;
+    background-color: #1592B4;
+    border: none;
+}
+
+.add-new-product button:hover {
+    background-color: #1283a2;
+}
+
+/* ======== Search Page ====== */
+
+.searchResult {
+    margin-top: 40px;
+}
+
+.searchResult h3 {
+    color: 	#DC143C;
+}
+
+#searchResultProduct{
+    margin-top: 40px;
+}
+
+/* ======== Update / Delete / Does Not Exist ======= */
+
+.alert-success, .alert-danger {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: -20px;
+    text-align: center;
+};

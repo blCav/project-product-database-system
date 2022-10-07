@@ -1,0 +1,38 @@
+<%- include('partials/header');  -%> 
+
+  <main>
+    <div class="add-new-product">
+       <h2 class="h1">Search Product</h2>
+    
+       <form action="/search" method="GET" >
+         <div class="form-group">
+            <input type="text" class="form-control" id="code" name="code" placeholder="Product Code">
+          </div>   
+          <button type="submit" class="btn btn-primary">Search in Database</button>
+       </form>
+     
+       <% if (product) { %>
+      <div class="searchResult" id="searchResultProduct">
+        <h3>Search Results :</h3>
+        <div class="container">
+          <table class="table table-bordered" width="100%" cellspacing="0" >
+            <thead>
+              <tr>
+                <th>Product Code</th>
+                <th>Description</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+          
+            <tbody>
+              <th scope="row"><%= product.code %></th>
+              <td><%= product.descriptionProduct %></td>
+              <td><%= product.price %></td>
+            </tbody>
+          </table>
+          <% } else if(product != ''){ %> 
+          <div class="alert alert-danger" style="width: 100%" >Product doesn't exist with this name !</div>
+        </div>    
+      </div>
+      <% } %>
+    </div>

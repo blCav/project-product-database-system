@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Database System</title>
+
+    <link rel="stylesheet" type="text/css" href="/libs/bootstrap.css">
+    <link href="/libs/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/design.css">
+
+    <script src="/libs/jquery.min.js"></script>
+    <script src="/libs/jquery.dataTables.min.js"></script>
+    <script src="/libs/dataTables.bootstrap4.min.js"></script>
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-content">
+            <h1 class="title-logo"><a href="/index">Authentication to Product Database System</a></h1>
+            <nav class="nav-links">
+                <% if(currentUser) { %>
+                <ul>
+                    <li><%= currentUser.name %></li>
+                    <li><a href="/logout">Logout</a></li>
+                    <li><a href="/index">Home</a></li>
+                    <li><a href="/product/new">Add Product</a></li>
+                    <li><a href="/product/search">Search</a></li>
+                </ul>
+                <% } %>
+        </nav>
+        </div>
+    </header>
